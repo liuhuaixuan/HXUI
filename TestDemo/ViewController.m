@@ -6,6 +6,7 @@
 //
 
 #import "ViewController.h"
+#import "HXUITools.h"
 
 @interface ViewController ()
 @property (weak, nonatomic) IBOutlet UITextField *userNameView;
@@ -21,6 +22,14 @@
     UITextField *testView;
     
     testView.textContentType = UITextContentTypePassword;
+    
+    
+    HXUIMoneyTextField *textView = [[HXUIMoneyTextField alloc] initWithFrame:CGRectMake((SCREEN_WIDTH - 200) * 0.5, 100, 200, 20)];
+    textView.placeholder = @"请输入金额";
+    [self.view addSubview:textView];
+    
+    NSString *date = [[HXUIDateTool shareInstance] getTomorrow:@"2021-4-30" formatter:nil];
+    NSLog(@"%@", date);
 }
 
 
