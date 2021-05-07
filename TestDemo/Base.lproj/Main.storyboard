@@ -28,11 +28,49 @@
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits" textContentType="password"/>
                             </textField>
+                            <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="mYN-pM-Syn">
+                                <rect key="frame" x="0.0" y="423" width="414" height="50"/>
+                                <subviews>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="ecr-Cf-sU7">
+                                        <rect key="frame" x="0.0" y="0.0" width="96" height="50"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="50" id="hwO-KA-WqT"/>
+                                        </constraints>
+                                    </imageView>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="7Ja-De-gbD">
+                                        <rect key="frame" x="106" y="0.0" width="96" height="50"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="50" id="heo-QR-5tw"/>
+                                        </constraints>
+                                    </imageView>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="3ld-SJ-M5y">
+                                        <rect key="frame" x="212" y="0.0" width="96" height="50"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="50" id="NIO-VQ-xzy"/>
+                                            <constraint firstAttribute="width" constant="50" id="V8R-TP-Ife"/>
+                                        </constraints>
+                                    </imageView>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="qdd-O3-pFS">
+                                        <rect key="frame" x="318" y="0.0" width="96" height="50"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="50" id="698-D5-WZk"/>
+                                            <constraint firstAttribute="height" constant="50" id="feB-us-swu"/>
+                                        </constraints>
+                                    </imageView>
+                                </subviews>
+                            </stackView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="mYN-pM-Syn" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="0m9-3D-gK2"/>
+                            <constraint firstItem="mYN-pM-Syn" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="Kjk-Uu-w3Z"/>
+                            <constraint firstItem="mYN-pM-Syn" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="ch9-e8-OtR"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="mYN-pM-Syn" secondAttribute="trailing" id="iiH-ME-JgS"/>
+                        </constraints>
                     </view>
                     <connections>
+                        <outlet property="imgView" destination="ecr-Cf-sU7" id="Ryz-Sw-MKQ"/>
                         <outlet property="pwdView" destination="eZe-dL-6SL" id="U8U-KE-36q"/>
                         <outlet property="userNameView" destination="eOp-mg-SOJ" id="hDw-6b-Io0"/>
                     </connections>

@@ -13,6 +13,6 @@
 #endif
 
 #import "HXUIDateTool.h"
-
+#import "UIImage+HXUIImage.h"
 
 #endif /* HXUITools_h */

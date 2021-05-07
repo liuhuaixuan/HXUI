@@ -16,7 +16,7 @@ Pod::Spec.new do |spec|
                    DESC
 
   spec.homepage     = "https://github.com/liuhuaixuan/HXUI"
-  # spec.screenshots  = "www.example.com/screenshots_1.gif", "www.example.com/screenshots_2.gif"
+  
   spec.license      = { :type => "MIT", :file => "FILE_LICENSE" }
   spec.author             = { "刘怀轩" => "17612178049@163.com" }
   # spec.social_media_url   = "https://twitter.com/刘怀轩"

@@ -11,6 +11,7 @@
 @interface ViewController ()
 @property (weak, nonatomic) IBOutlet UITextField *userNameView;
 @property (weak, nonatomic) IBOutlet UITextField *pwdView;
+@property (weak, nonatomic) IBOutlet UIImageView *imgView;
 
 @end
 
@@ -30,6 +31,8 @@
     
     NSString *date = [[HXUIDateTool shareInstance] getTomorrow:@"2021-4-30" formatter:nil];
     NSLog(@"%@", date);
+    
+    self.imgView.image = [UIImage hx_imageWithName:@"编组 8"];
 }
 
 
